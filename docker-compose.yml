@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: App
+      target: build
+    volumes:
+      - "build/App:/App/build"
