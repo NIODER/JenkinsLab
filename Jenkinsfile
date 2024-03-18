@@ -11,8 +11,8 @@ pipeline {
         }
     }
     post {
-        always {
-            archiveArtifacts artifacts: './build/App/**'
+        success {
+            archiveArtifacts artifacts: 'build/App/**'
         }
     }
 }
